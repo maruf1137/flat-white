@@ -1,0 +1,53 @@
+.heading-1{
+    font-size: 7.2rem; 
+    text-shadow: 0rem .5rem .5rem rgba(0, 0, 0, 0.5);
+
+    @media only screen and (max-width:$bp-smaller){
+        font-size: 5.2rem;
+    }
+}
+
+.heading-2{
+    font-size: 4.2rem;
+}
+
+.heading-4{
+    font-size: 2.4rem;
+    color: #000;
+}
+
+.heading-3{
+    font-size: 2.8rem;
+    color: #000;
+}
+
+.mb-sm{ margin-bottom: 2rem; }
+
+.p-text{
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 333;
+}
+
+.light{
+    color: #dbdbdb;
+}
+
+.section-header{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+    @media only screen and(max-width:$bp-largest){
+        width: 80%;
+    }
+
+    @media only screen and(max-width:$bp-small-medium){
+        width: 90%;
+    }
+}
+
+section{
+    padding: 8rem 0;
+}

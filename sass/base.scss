@@ -1,0 +1,69 @@
+$font-primary: sans-serif;
+
+$color-primary:#FAC435;
+$color-secondary:#FEE256;
+$color-icon:#F8AF1D;
+
+// breack points
+
+$bp-largest: 75em;  //1200px
+$bp-large: 62.5em;  //1000px
+$bp-medium: 56.25em;  //900px
+$bp-small-medium: 50em;  //800px
+$bp-small: 37.5em;  //600px
+$bp-smaller: 25em;  //400
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+::selection{
+    background-color: #000;
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    @media only screen and (max-width:$bp-largest){
+        font-size: 58%;
+    }
+
+    @media only screen and (max-width:$bp-largest){
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width:$bp-medium){
+        font-size: 52%;
+    }
+
+    @media only screen and (max-width:$bp-small-medium){
+        font-size: 48%;
+    }
+}
+
+body{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.6;
+    font-family: $font-primary;
+    overflow-x: hidden; 
+}
+
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width:$bp-largest){
+        padding: 0 5rem;
+    }
+}

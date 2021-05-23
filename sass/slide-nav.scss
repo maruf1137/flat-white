@@ -1,0 +1,52 @@
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 40%;
+    font-size: 6rem;
+    display: block;
+    color: #fff;
+    height: 6rem; 
+    width: 6rem;
+    background-color: #000;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s; 
+
+    @media only screen and (max-width:$bp-medium){
+        display: none;
+    }
+
+    &:hover{
+        background-color: $color-primary; 
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    right: 0;
+    transform: translateX(8rem); 
+
+    @media only screen and (max-width:$bp-medium){
+        transform: translateX(2rem);
+    }
+}
+
+.owl-carousel .owl-nav.disabled{
+    display:block
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    left: 0;
+    transform: translateX(-8rem);
+
+    @media only screen and (max-width:$bp-medium){
+        transform: translateX(-2rem);
+    }
+}
+
+.owl-dots{
+    display: none;
+}

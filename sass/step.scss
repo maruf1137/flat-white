@@ -1,0 +1,117 @@
+.step-section{
+    background-image: url(../img/steps-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .owl-carousel .owl-nav button.owl-prev {
+        transform: translateX(-8rem);
+
+        @media only screen and (max-width:$bp-large){
+            transform: translateX(-4rem);
+        }
+
+        @media only screen and (max-width:$bp-medium){
+            transform: translateX(4rem);
+        }
+
+        @media only screen and (max-width:$bp-small){
+            transform: translateX(-2rem);
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        transform: translateX(8rem);
+
+        @media only screen and (max-width:$bp-large){
+            transform: translateX(4rem);
+        }
+
+        @media only screen and (max-width:$bp-medium){
+            transform: translateX(-4rem);
+        }
+
+        @media only screen and (max-width:$bp-small){
+            transform: translateX(2rem);
+        }
+    }
+
+    .owl-carousel.owl-drag .owl-item{
+        opacity: 0.5;
+    }
+
+    .owl-item.active.center {
+        opacity: 1;
+        .step__content{
+            transform: scale(1.2);
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev{
+        background-color: #fff;
+        color: #000;
+        transition: all .3s;
+
+        &:hover{
+            background-color: $color-primary;
+        }
+    }
+}
+
+.step{
+    margin: 0 auto;
+
+    &__content{
+        padding: 5rem 2rem;
+    }
+
+    &__item{
+        text-align: center;
+        margin: 12rem 1.5rem;
+
+        @media only screen and (max-width:$bp-small){
+            width: 70%;
+            margin: 8rem auto;
+        }
+    } 
+
+    &__icon{
+        height: 8rem;
+        width: 8rem;
+        fill: $color-primary;
+    }
+
+    &__header{
+        color: #Fff;
+        font-size: 3rem;
+    }
+
+    .p-text{
+        color: #fff;
+    }
+
+    &__button{
+        text-align: center;
+    }
+
+    &__btn{
+        color: #000;
+        font-size: 1.7rem;
+        font-weight: 600;
+        background-color: $color-primary;
+        padding: 2rem 3.5rem;
+        border-radius: 10rem;
+        transition: all .3s;
+
+        &:hover,
+        &:active{
+            background-color: #000;
+            color: #fff;
+        }
+
+        @media only screen and (max-width:$bp-smaller){
+            display: none;
+        }
+    }
+}

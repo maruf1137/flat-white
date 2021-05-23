@@ -1,0 +1,56 @@
+.contact-section{
+    background-image: url(../img/contact-bg.png);
+    // height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center left;
+    padding: 12rem 0;
+}
+
+.contact{
+    background-color: #fff;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 5rem 7rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.329);
+
+    @media only screen and (max-width:$bp-small-medium){
+        width: 80%;
+    }
+
+    @media only screen and (max-width:$bp-smaller){
+        width: 100%;
+    }
+
+    &__header{
+        margin-bottom: 4rem;
+    }
+
+    &__icon{
+        width: 6rem;
+        height: 6rem;
+        fill: $color-primary;
+        margin-bottom: 2rem;
+    }
+
+    &__number{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    &__line{
+
+    }
+
+    &__gmail{
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 8rem;
+    }
+
+    &__text{
+        font-size: 1.4rem;
+    }
+}
